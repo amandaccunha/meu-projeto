@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  color: rgba(99, 91, 92, 0.8823529412);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgba(255, 250, 250, 0.7803921569);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.7803921569);
+}
+
+header {
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  padding: 20px 0;
+  text-align: center;
+}
+header .logo h1 {
+  font-size: 2.5rem;
+  color: rgba(99, 91, 92, 0.8823529412);
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+header nav ul nav ul li {
+  display: inline;
+}
+header nav ul nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#produtos {
+  padding: 50px 20px;
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  text-align: center;
+}
+#produtos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+#produtos .produtos-grid {
+  display: flex;
+  flex-wrap: wrap; /* Para os produtos se ajustarem */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px;
+}
+#produtos .produto {
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#produtos .produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+#produtos .produto h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+#produtos .produto p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+#produtos .produto button {
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  color: rgba(99, 91, 92, 0.8823529412);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+#produtos .produto button:hover {
+  background-color: rgba(255, 199, 199, 0.7803921569);
+}
+#produtos .produto button:disabled {
+  background-color: #20202000;
+  cursor: not-allowed;
+}
+
+/* Arquivo principal para compilar todos os SCSS */
+footer {
+  background-color: rgba(255, 250, 250, 0.7803921569);
+  padding: 20px;
+  color: rgba(99, 91, 92, 0.8823529412);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  margin: 5px 0;
+}
+footer a {
+  color: rgba(99, 91, 92, 0.8823529412);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */

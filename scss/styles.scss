@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'header';
+@import 'produtos';
+
+
+/* Arquivo principal para compilar todos os SCSS */
+footer {
+    background-color: $cor-footer;
+    padding: 20px;
+    color: $cor-texto;
+
+    p {
+        margin: 5px 0;
+    }
+
+    a {
+        color: $cor-texto;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    // Centralizando o conteúdo do rodapé
+    @include centralizar(column);
+}

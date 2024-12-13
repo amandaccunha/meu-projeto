@@ -1,0 +1,29 @@
+// Importando as variáveis
+@import 'variables';
+
+// Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    background-color: $cor-background;
+    color: $cor-texto;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+// Links
+a {
+    color: $cor-primary;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten($cor-primary, 10%);
+    }
+}

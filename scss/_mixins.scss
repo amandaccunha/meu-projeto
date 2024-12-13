@@ -1,0 +1,29 @@
+// Mixin para centralizar conteúdo
+@mixin centralizar($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// Mixin para botão
+@mixin botao($background: $cor-primary) {
+    background-color: $background;
+    color: $cor-texto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: $font-size-small;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $cor-btn-hover;
+    }
+
+    &:disabled {
+        background-color: $cor-btn-active;
+        cursor: not-allowed;
+    }
+}
